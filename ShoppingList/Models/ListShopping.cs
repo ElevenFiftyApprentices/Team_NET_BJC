@@ -6,7 +6,7 @@ using System.Web;
 
 namespace ShoppingList.Models
 {
-    public class ShoppingList
+    public class ListShopping
     {
         [Key]
         public int shoppingListId { get; set; }
@@ -23,7 +23,5 @@ namespace ShoppingList.Models
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd)", ApplyFormatInEditMode = true)]
         [Display(Name = "Edited Date")]
         public DateTimeOffset ModifiedUtc { get; set; }
-
-
     }
 }
